@@ -5,6 +5,7 @@ const csurf = require('csurf');
 const debug = require('debug');
 const cors = require('cors');
 const { isProduction } = require('./config/keys');
+require('./models/User');
 
 var usersRouter = require('./routes/api/users');
 var tweetsRouter = require('./routes/api/tweets');
